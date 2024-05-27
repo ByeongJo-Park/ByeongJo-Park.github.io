@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "http://byeongjo-park.github.io",
   "scripts": {
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
