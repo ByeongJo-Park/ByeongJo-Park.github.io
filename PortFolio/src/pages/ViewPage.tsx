@@ -1,9 +1,12 @@
 import React from "react";
-
+import Profile from "../components/home/Profile";
+import Navi from "../components/commons/Navi";
 const ViewPage: React.FC = () => {
 
     return (
-        <div className=" bg-black w-full h-screen px-72 py-32">
+        <div className="relative w-full h-auto px-12 py-12 flex justify-between">
+            <Navi/>
+            <Profile/>
         </div>
     )
 }

@@ -15,6 +15,7 @@ export default {
         "white"         : "#FFFFFF",
         "red"           : "#E71C1C",
         "black"         : "#171717",
+        "light-black"   : "#191919",
         "green"         : "#52DD22",
       },
       fontFamily:{
@@ -29,21 +30,15 @@ export default {
         'frs-bl' : ['frs-bl'],
       },
       keyframes: {
-        slideDiagonalLeft: {
-          '0%': { transform: 'translateX(0) translateY(0)' },
-          '100%': { transform: 'translateX(-100%) translateY(-100%)' },
-        },
-        slideDiagonalRight: {
-          '0%': { transform: 'translateX(0) translateY(0)' },
-          '100%': { transform: 'translateX(100%) translateY(100%)' },
-        },
+        'custom-bounce': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)'},
       },
       animation: {
-        slideDiagonalLeft: 'slideDiagonalLeft 7s ease forwards',
-        slideDiagonalRight: 'slideDiagonalRight 7s ease forwards',
+        'custom-bounce':'customBounce 1.5s infinite',
       },
     },
   },
   plugins: [],
+  }
 }
-

@@ -5,7 +5,7 @@ import ViewPage from './pages/ViewPage';
 
 const App: React.FC = () => {
     return (
-        <div className='h-auto flex flex-col overflow-hidden'>
+        <div className='h-auto flex flex-col gap-4 py-20 bg-black sm:px-20 lg:px-52 min-w-[500px]'>
             <MainPage/>
             <ViewPage/>
         </div>
