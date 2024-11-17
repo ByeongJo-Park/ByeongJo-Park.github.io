@@ -14,7 +14,7 @@ export default {
         "point-gray"    : "#5C5C5C",
         "white"         : "#FFFFFF",
         "red"           : "#E71C1C",
-        "black"         : "#373737",
+        "black"         : "#171717",
         "green"         : "#52DD22",
       },
       fontFamily:{

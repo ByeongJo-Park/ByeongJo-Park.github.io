@@ -34,7 +34,7 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
   };
 
   return (
-    <div className="w-full h-screen overflow-hidden">
+    <div className="w-full overflow-hidden">
       <div
         className="h-full transition-transform duration-700"
         style={{ transform: `translateY(-${currentIndex * 100}vh)` }}
