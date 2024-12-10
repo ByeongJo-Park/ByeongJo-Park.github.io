@@ -6,47 +6,47 @@
 
 @font-face {
     font-family: 'frs-th';
-    src: url('./fonts/Freesentation/Freesentation-1Thin.ttf');
+    src: url('./assets/fonts/Freesentation/Freesentation-1Thin.ttf');
 }
 
 @font-face {
     font-family: 'frs-el';
-    src: url('./fonts/Freesentation/Freesentation-2ExtraLight.ttf');
+    src: url('./assets/fonts/Freesentation/Freesentation-2ExtraLight.ttf');
 }
 
 @font-face {
     font-family: 'frs-l';
-    src: url('./fonts/Freesentation/Freesentation-3Light.ttf');
+    src: url('./assets/fonts/Freesentation/Freesentation-3Light.ttf');
 }
 
 @font-face {
     font-family: 'frs-r';
-    src: url('./fonts/Freesentation/Freesentation-4Regular.ttf');
+    src: url('./assets/fonts/Freesentation/Freesentation-4Regular.ttf');
 }
 
 @font-face {
     font-family: 'frs-m';
-    src: url('./fonts/Freesentation/Freesentation-5Medium.ttf');
+    src: url('./assets/fonts/Freesentation/Freesentation-5Medium.ttf');
 }
 
 @font-face {
     font-family: 'frs-sb';
-    src: url('./fonts/Freesentation/Freesentation-6SemiBold.ttf');
+    src: url('./assets/fonts/Freesentation/Freesentation-6SemiBold.ttf');
 }
 
 @font-face {
     font-family: 'frs-b';
-    src: url('./fonts/Freesentation/Freesentation-7Bold.ttf');
+    src: url('./assets/fonts/Freesentation/Freesentation-7Bold.ttf');
 }
 
 @font-face {
     font-family: 'frs-eb';
-    src: url('./fonts/Freesentation/Freesentation-8ExtraBold.ttf');
+    src: url('./assets/fonts/Freesentation/Freesentation-8ExtraBold.ttf');
 }
 
 @font-face {
     font-family: 'frs-bl';
-    src: url('./fonts/Freesentation/Freesentation-9Black.ttf');
+    src: url('./assets/fonts/Freesentation/Freesentation-9Black.ttf');
 }
 
 

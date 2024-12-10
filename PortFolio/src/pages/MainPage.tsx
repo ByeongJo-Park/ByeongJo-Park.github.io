@@ -7,11 +7,11 @@ const MainPage: React.FC = () => {
             <div className="text-white text-2xl font-frs-m border-white border-b-2">
                 Front-End Developer
             </div>
-            <div className="flex flex-col text-white font-frs-bl text-7xl mt-2 grow">
-                <span className="m-2">
+            <div className="flex flex-col text-white text-7xl mt-2 grow">
+                <span className="m-2 font-frs-bl">
                     PAT's
                 </span>
-                <span className="m-2">
+                <span className="m-2 font-frs-bl">
                     PORTFOLIO
                 </span>
             </div>
