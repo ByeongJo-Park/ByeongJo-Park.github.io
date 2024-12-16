@@ -16,12 +16,11 @@ jobs:
         with:
           node-version: 20.x
 
-      - name: Run install yarn
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install
-      
-      - name: Run deploy
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: run deploy
+      - name: Install yarn
+        run: yarn install
+
+      - name: Build
+        run: yarn build
+
+      - name: Deploy
+        run: yarn run deploy
