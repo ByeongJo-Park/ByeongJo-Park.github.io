@@ -20,7 +20,7 @@ jobs:
         run: cd PortFolio && yarn install
 
       - name: Build
-        run: yarn build
+        run: cd PortFolio && yarn build
 
       - name: test Deploy
-        run: yarn run deploy
+        run: cd PortFolio && yarn run deploy
