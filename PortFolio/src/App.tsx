@@ -9,7 +9,7 @@ import store from './store';
 const App: React.FC = () => {
     return (
         <Provider store={store}>
-            <div className='h-auto flex flex-col gap-4 py-20 bg-black sm:px-20 lg:px-52 min-w-[500px]'>
+            <div className='flex flex-col gap-4 bg-black sm:px-20 lg:px-52 min-w-[500px]'>
                 <MainPage/>
                 <ViewPage/>
             </div>

@@ -3,7 +3,7 @@ import nextImg from "../assets/next.png";
 
 const MainPage: React.FC = () => {
     return (
-        <div className="w-full h-[90vh] px-12 py-12 flex flex-col">
+        <div className="w-full h-svh px-12 pt-24 pb-12 flex flex-col">
             <div className="text-white text-2xl font-frs-m border-white border-b-2">
                 Front-End Developer
             </div>

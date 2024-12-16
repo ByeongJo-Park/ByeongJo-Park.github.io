@@ -22,7 +22,7 @@ const ViewPage: React.FC = () => {
         }
     }
     return (
-        <div className="relative w-full h-auto px-12 py-12 flex justify-between">
+        <div className="relative w-full min-h-svh px-12 py-12 flex justify-between">
             <Navi/>
             {renderContent()}
         </div>
