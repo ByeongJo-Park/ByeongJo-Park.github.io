@@ -1,0 +1,66 @@
+@config "../tailwind.config.js";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'frs-th';
+    src: url('./assets/fonts/Freesentation/Freesentation-1Thin.ttf');
+}
+
+@font-face {
+    font-family: 'frs-el';
+    src: url('./assets/fonts/Freesentation/Freesentation-2ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'frs-l';
+    src: url('./assets/fonts/Freesentation/Freesentation-3Light.ttf');
+}
+
+@font-face {
+    font-family: 'frs-r';
+    src: url('./assets/fonts/Freesentation/Freesentation-4Regular.ttf');
+}
+
+@font-face {
+    font-family: 'frs-m';
+    src: url('./assets/fonts/Freesentation/Freesentation-5Medium.ttf');
+}
+
+@font-face {
+    font-family: 'frs-sb';
+    src: url('./assets/fonts/Freesentation/Freesentation-6SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'frs-b';
+    src: url('./assets/fonts/Freesentation/Freesentation-7Bold.ttf');
+}
+
+@font-face {
+    font-family: 'frs-eb';
+    src: url('./assets/fonts/Freesentation/Freesentation-8ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'frs-bl';
+    src: url('./assets/fonts/Freesentation/Freesentation-9Black.ttf');
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#root {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
