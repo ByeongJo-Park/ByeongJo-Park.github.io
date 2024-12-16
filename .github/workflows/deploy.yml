@@ -1,0 +1,22 @@
+name: Auto Build and Deploy
+
+on: 
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    name: start
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+
+      - name: Run install yarn
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: run deploy
