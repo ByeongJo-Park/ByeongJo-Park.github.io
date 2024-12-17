@@ -9,10 +9,10 @@ const MainPage: React.FC = () => {
             </div>
             <div className="flex flex-col text-white text-7xl mt-2 grow">
                 <span className="m-2 font-frs-bl">
-                    PAT's
+                    Pat's
                 </span>
                 <span className="m-2 font-frs-bl">
-                    PORTFOLIO
+                    PortFolio
                 </span>
             </div>
             <div className="flex justify-center">
