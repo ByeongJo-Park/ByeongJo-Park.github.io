@@ -1,6 +1,6 @@
 import React from 'react';
-import MainPage from './pages/MainPage';
-import ViewPage from './pages/ViewPage';
+import Intro from './pages/Intro';
+import Main from './pages/Main';
 import { Provider } from 'react-redux';
 import store from './store';
 
@@ -10,8 +10,8 @@ const App: React.FC = () => {
     return (
         <Provider store={store}>
             <div className='flex flex-col gap-4 bg-black sm:px-20 lg:px-52 min-w-[500px]'>
-                <MainPage/>
-                <ViewPage/>
+                <Intro/>
+                <Main/>
             </div>
         </Provider>
     )
