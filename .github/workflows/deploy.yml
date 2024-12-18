@@ -16,6 +16,12 @@ jobs:
         with:
           node-version: 20.x
 
+      - name: Install yarn
+        run: cd PortFolio && yarn install
+
+      # - name: Build
+      #   run: cd PortFolio && yarn build
+      
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
