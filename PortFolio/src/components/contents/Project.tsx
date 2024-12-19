@@ -1,9 +1,41 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { setProject } from '../../action/projectAction';
+import { useSelector } from "react-redux";
+import { RootState } from '../../reducer';
+import Project1 from '../projects/Project1';
+import Project2 from '../projects/Project2';
+import Project3 from '../projects/Project3';
 
 const Project: React.FC = () => {
+    const dispatch = useDispatch();
+
+    const changeProject = (project: string) => {
+        dispatch(setProject(project));
+    };   
+    const currentView = useSelector((state: RootState) => state.project.project);
+    const renderContent = () => {
+        switch (currentView) {
+            case "MEFI":
+                return <Project1/>
+            case "UKKIKKI":
+                return <Project2/>
+            case "GRABPIC":
+                return <Project3/>
+            default:
+                return <div className="text-center">404: Page Not Found</div>;
+        }
+    }
+    
     return (
-        <div className="w-full bg-white h-[8000px] m-2">
-            Project
+        <div className="w-full m-2 relative px-6 py-12 justify-between">
+            <nav className="flex border border-point-gray rounded-xl bg-light-black text-point-gray font-frs-b mb-4 items-center">
+                <span className='m-2 px-2 text-gray text-xl'>Projects: </span>
+                <span className='m-2 pr-1 hover:text-gray text-white text-2xl' onClick={() => changeProject("MEFI")}>MEFI</span>
+                <span className='m-2 px-1 hover:text-gray text-white text-2xl' onClick={() => changeProject("UKKIKKI")}>Ukkikki</span>
+                <span className='m-2 px-1 hover:text-gray text-white text-2xl' onClick={() => changeProject("GRABPIC")}>Grabpic</span>
+            </nav>
+            {renderContent()}
         </div>
     );
 };
