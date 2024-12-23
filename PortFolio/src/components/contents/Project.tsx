@@ -18,9 +18,9 @@ const Project: React.FC = () => {
         switch (currentView) {
             case "MEFI":
                 return <Project1/>
-            case "UKKIKKI":
-                return <Project2/>
             case "GRABPIC":
+                return <Project2/>
+            case "UKKIKKI":
                 return <Project3/>
             default:
                 return <div className="text-center">404: Page Not Found</div>;
@@ -29,11 +29,11 @@ const Project: React.FC = () => {
     
     return (
         <div className="w-full m-2 relative px-6 py-12 justify-between">
-            <nav className="flex border border-point-gray rounded-xl bg-light-black text-point-gray font-frs-b mb-4 items-center">
+            <nav className="flex border border-point-gray rounded-xl bg-light-black text-point-gray font-frs-b mb-5 items-center">
                 <span className='m-2 px-2 text-gray text-xl'>Projects: </span>
                 <span className='m-2 pr-1 hover:text-gray text-white text-2xl' onClick={() => changeProject("MEFI")}>MEFI</span>
-                <span className='m-2 px-1 hover:text-gray text-white text-2xl' onClick={() => changeProject("UKKIKKI")}>Ukkikki</span>
                 <span className='m-2 px-1 hover:text-gray text-white text-2xl' onClick={() => changeProject("GRABPIC")}>Grabpic</span>
+                <span className='m-2 px-1 hover:text-gray text-white text-2xl' onClick={() => changeProject("UKKIKKI")}>Ukkikki</span>
             </nav>
             {renderContent()}
         </div>
