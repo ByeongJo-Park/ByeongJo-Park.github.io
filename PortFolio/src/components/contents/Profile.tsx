@@ -39,6 +39,9 @@ const Profile: React.FC = () => {
                     <span className='font-frs-eb text-3xl'>Career ( 총 1년 3개월 )</span>
                     <div className='flex flex-col px-4'>
                         <li className='p-1 font-frs-b text-xl'>티앤테크 ( 솔루션 개발 2팀 / 1년 3개월 근무 )</li>
+                        <li>1. L사 PC관리시스템</li>
+                        <li>2. S사 경영관리시스템</li>
+                        <li>3. </li>
                     </div>
                 </div>
                 <div className='w-full flex flex-col'>
