@@ -7,11 +7,13 @@ export default {
   ],
   theme: {
     extend: {
-      minHeight: {
-        '1svh' : "100svh",
-        '2svh': '200svh',
-        '3svh': '300svh',
-        '4svh': '400svh',
+      height: {
+        '1h' : '100svh',
+        '2h' : '200svh',
+        '3h' : '300svh',
+        '4h' : '400svh',
+        '5h' : '500svh',
+        '6h' : '600svh',
       },
       colors: {
         "sky-blue"      : "#88C6FF",

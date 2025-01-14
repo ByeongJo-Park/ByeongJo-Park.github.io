@@ -9,21 +9,24 @@ import { RootState } from "../reducer";
 
 const Main: React.FC = () => {
     const currentView = useSelector((state: RootState) => state.view.view);
-    const [height, setHeight] = useState("min-h-svh");
+    const [height, setHeight] = useState('h-1h');
     const contentRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const height = () => {
+        const targetHeight = () => {
             if(contentRef.current) {
                 const contentHeight = contentRef.current.offsetHeight;
                 const viewportHeight = window.innerHeight;
-                const count = Math.ceil(contentHeight/viewportHeight);
-                setHeight(`min-h-[${count}svh]`)
+                const count = Math.ceil((contentHeight)/viewportHeight);
+                console.log('ch:' + contentRef.current.offsetHeight);
+                console.log('vh:' + window.innerHeight);
+                console.log('count:' + count);
+                setHeight(`h-${count}h`)
             }
         };
-        height();
-        window.addEventListener("resize", height);
-        return () => window.removeEventListener("resize", height);
+        targetHeight();
+        window.addEventListener("resize", targetHeight);
+        return () => window.removeEventListener("resize", targetHeight);
     })
 
     const renderContent = () => {
@@ -39,9 +42,11 @@ const Main: React.FC = () => {
         }
     }
     return (
-        <div ref={contentRef} className={`relative w-full min-h-svh px-12 py-12 flex justify-between`}>
+        <div className={`relative w-full px-12 py-12 flex justify-between ${height}`}>
             <Navi/>
-            {renderContent()}
+            <div ref={contentRef} className="content-wrapper">
+                {renderContent()}
+            </div>
         </div>
     )
 }
