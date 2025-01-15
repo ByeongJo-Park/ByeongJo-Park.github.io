@@ -23,7 +23,7 @@ const Main: React.FC = () => {
         }
     }
     return (
-        <div className={`relative w-full px-12 py-12 flex justify-between h-svh`}>
+        <div className={`relative w-full px-12 py-12 flex justify-between min-h-svh`}>
             <Navi/>
             {renderContent()}
         </div>

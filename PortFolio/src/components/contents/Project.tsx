@@ -28,7 +28,7 @@ const Project: React.FC = () => {
     }
     
     return (
-        <div className="w-full m-2 relative px-6 py-12 justify-between">
+        <div className="w-full bg-light-black border border-point-gray m-2 rounded-3xl px-6 py-6 text-white min-h-svh">
             <nav className="flex border border-point-gray rounded-xl bg-light-black text-point-gray font-frs-b mb-5 items-center">
                 <span className='m-2 px-2 text-gray text-xl'>Projects: </span>
                 <span className='m-2 pr-1 hover:text-gray text-white text-2xl' onClick={() => changeProject("MEFI")}>MEFI</span>

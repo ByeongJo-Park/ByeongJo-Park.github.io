@@ -3,7 +3,7 @@ import profilePhoto from '../../assets/IDPhoto.jpg';
 
 const Profile: React.FC = () => {
     return (
-        <div className="w-full bg-light-black border-point-gray m-2 rounded-3xl p-16 text-white">
+        <div className="w-full bg-light-black border border-point-gray m-2 rounded-3xl px-6 py-12 text-white">
             <div className='w-full flex flex-col gap-4'>
                 <div className='w-full flex'>
                     <img src={profilePhoto} alt='Profile' className='w-40 h-40 rounded-full object-cover object-top'/>

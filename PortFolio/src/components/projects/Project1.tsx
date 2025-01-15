@@ -3,7 +3,7 @@ import logo from '../../assets/MEFI/MEFILogo.png';
 
 const Project1: React.FC = () => {
   return (
-    <div className="w-full h-full border border-point-gray rounded-xl bg-light-black font-frs-b p-4 text-white">
+    <div className="w-full border border-point-gray rounded-xl bg-light-black font-frs-b p-4 text-white">
       <img src={logo} alt="pjtLogo" className='p-4'/>
       <div className='w-full p-4'>
         <p className='text-3xl mb-4'>MEFI</p>
