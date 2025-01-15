@@ -10,8 +10,6 @@ import { RootState } from "../reducer";
 const Main: React.FC = () => {
     const currentView = useSelector((state: RootState) => state.view.view);
 
-
-
     const renderContent = () => {
         switch (currentView) {
             case "Home":
