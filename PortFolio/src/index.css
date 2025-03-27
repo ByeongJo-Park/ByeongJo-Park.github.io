@@ -69,3 +69,6 @@ html, body {
 * {
     box-sizing: border-box;
 }
+.scroll-hide::-webkit-scrollbar {
+    display: none;  
+}
