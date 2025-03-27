@@ -1,43 +1,63 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setProject } from '../../action/projectAction';
-import { useSelector } from "react-redux";
 import { RootState } from '../../reducer';
 import Project1 from '../projects/Project1';
 import Project2 from '../projects/Project2';
 import Project3 from '../projects/Project3';
 
 const Project: React.FC = () => {
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
+  const currentView = useSelector((state: RootState) => state.project.project);
 
-    const changeProject = (project: string) => {
-        dispatch(setProject(project));
-    };   
-    const currentView = useSelector((state: RootState) => state.project.project);
-    const renderContent = () => {
-        switch (currentView) {
-            case "MEFI":
-                return <Project1/>
-            case "GRABPIC":
-                return <Project2/>
-            case "UKKIKKI":
-                return <Project3/>
-            default:
-                return <div className="text-center">404: Page Not Found</div>;
-        }
+  const changeProject = (project: string) => {
+    dispatch(setProject(project));
+  };
+
+  const renderContent = () => {
+    switch (currentView) {
+      case 'MEFI':
+        return <Project1 />;
+      case 'GRABPIC':
+        return <Project2 />;
+      case 'UKKIKKI':
+        return <Project3 />;
+      default:
+        return <div className="text-center text-gray-400 text-lg py-12">404: Page Not Found</div>;
     }
-    
-    return (
-        <div className="w-full bg-light-black border border-point-gray m-2 rounded-3xl px-6 py-6 text-white min-h-svh">
-            <nav className="flex border border-point-gray rounded-xl bg-light-black text-point-gray font-frs-b mb-5 items-center">
-                <span className='m-2 px-2 text-gray text-xl'>Projects: </span>
-                <span className='m-2 pr-1 hover:text-gray text-white text-2xl' onClick={() => changeProject("MEFI")}>MEFI</span>
-                <span className='m-2 px-1 hover:text-gray text-white text-2xl' onClick={() => changeProject("GRABPIC")}>Grabpic</span>
-                <span className='m-2 px-1 hover:text-gray text-white text-2xl' onClick={() => changeProject("UKKIKKI")}>Ukkikki</span>
-            </nav>
-            {renderContent()}
-        </div>
-    );
+  };
+
+  return (
+    <div className="w-full max-w-7xl mx-auto bg-light-black border border-gray-700 rounded-3xl text-white shadow-lg px-8 py-12">
+      {/* 프로젝트 선택 네비게이션 */}
+      <nav className="flex items-center gap-4 bg-point-gray/10 border border-point-gray rounded-xl px-6 py-3 mb-10">
+        <span className='text-xl text-gray-400 font-frs-m'>Projects</span>
+        <button
+          onClick={() => changeProject('MEFI')}
+          className={`text-2xl font-semibold hover:text-point-blue transition-colors ${currentView === 'MEFI' ? 'text-white underline underline-offset-4' : 'text-gray-400'}`}
+        >
+          MEFI
+        </button>
+        <button
+          onClick={() => changeProject('GRABPIC')}
+          className={`text-2xl font-semibold hover:text-point-blue transition-colors ${currentView === 'GRABPIC' ? 'text-white underline underline-offset-4' : 'text-gray-400'}`}
+        >
+          Grabpic
+        </button>
+        <button
+          onClick={() => changeProject('UKKIKKI')}
+          className={`text-2xl font-semibold hover:text-point-blue transition-colors ${currentView === 'UKKIKKI' ? 'text-white underline underline-offset-4' : 'text-gray-400'}`}
+        >
+          Ukkikki
+        </button>
+      </nav>
+
+      {/* 프로젝트 상세 렌더링 */}
+      <div className="bg-[#1e1e1e] rounded-2xl p-6 shadow-md">
+        {renderContent()}
+      </div>
+    </div>
+  );
 };
 
 export default Project;

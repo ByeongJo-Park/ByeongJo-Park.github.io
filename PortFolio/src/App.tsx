@@ -7,14 +7,14 @@ import store from './store';
 // import Carousel from './components/Carousel';
 
 const App: React.FC = () => {
-    return (
-        <Provider store={store}>
-            <div className='flex flex-col bg-black sm:px-20 lg:px-52 min-w-[500px]'>
-                <Intro/>
-                <Main/>
-            </div>
-        </Provider>
-    )
+  return (
+    <Provider store={store}>
+      <div className='flex flex-col bg-black sm:px-20 lg:px-52 min-w-[500px]'>
+        <Intro/>
+        <Main/>
+      </div>
+    </Provider>
+  )
 }
 
 export default App
