@@ -1,11 +1,9 @@
 import React from 'react';
 import profilePhoto from '../../assets/IDPhoto.jpg';
+import Divider from '../commons/Divider';
 
 const Profile: React.FC = () => {
 
-  const Divider = () => (
-    <div className="h-[1px] bg-gradient-to-r from-transparent via-gray to-transparent my-6" />
-  );
 
   return (
     <div className="w-full max-w-7xl mx-auto bg-light-black border border-gray-700 rounded-3xl text-white shadow-lg">
