@@ -27,7 +27,7 @@ const Project3: React.FC = () => {
           <p className="text-gray mb-8">
             일상 속 추억을 안전하게 기록하고, 실시간으로 공유하는 보안형 앨범 플랫폼
           </p>
-          <p className='font-pre-B text-lg text-point-blue mb-4'>역할 : 팀장 / Front-End Developer</p>
+          <p className='font-pre-B text-lg text-point-blue mb-4'>역할 : 팀장 / Front-End Developer (6인프로젝트)</p>
           <div className='space-y-1 text-gray-300 text-sm leading-relaxed'>
             <p>AWS S3 암호화 기반 보안 앨범 서비스</p>
             <p>사진 촬영부터 업로드, 공유까지 지원하는 실시간 앨범 기능 구현</p>
@@ -134,6 +134,9 @@ const Project3: React.FC = () => {
           <img src={banMember} alt="멤버 추방" className="rounded-xl shadow max-h-[360px]"/>
           <img src={homeSetting} alt="홈 화면 설정" className="rounded-xl shadow max-h-[360px]"/>
         </div>
+        <h2>회고</h2>
+        <h2>성장</h2>
+
       </section>
 
     </div>
