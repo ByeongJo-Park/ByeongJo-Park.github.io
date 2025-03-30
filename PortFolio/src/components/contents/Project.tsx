@@ -17,14 +17,14 @@ const Project: React.FC = () => {
 
   const renderContent = () => {
     switch (currentView) {
-      case 'MEFI':
-        return <Project1 />;
       case 'GRABPIC':
         return <Project2 />;
       case 'UKKIKKI':
         return <Project3 />;
       case '곁에':
         return <Project4 />;
+      case '.etc':
+        return <Project1 />;
       default:
         return <div className="text-center text-gray-400 text-lg py-12">404: Page Not Found</div>;
     }
@@ -35,12 +35,6 @@ const Project: React.FC = () => {
       {/* 프로젝트 선택 네비게이션 */}
       <nav className="flex items-center gap-6 bg-point-gray/10 border border-point-gray rounded-xl px-6 py-3 mb-6">
         <span className='text-xl text-gray-400 font-frs-m'>Projects</span>
-        {/* <button
-          onClick={() => changeProject('MEFI')}
-          className={`text-2xl font-semibold hover:text-point-blue transition-colors ${currentView === 'MEFI' ? 'text-white underline underline-offset-4' : 'text-gray'}`}
-        >
-          MEFI
-        </button> */}
         <button
           onClick={() => changeProject('UKKIKKI')}
           className={`text-2xl font-semibold hover:text-point-blue transition-colors ${currentView === 'UKKIKKI' ? 'text-white underline underline-offset-4' : 'text-gray'}`}
@@ -53,12 +47,18 @@ const Project: React.FC = () => {
         >
           Grabpic
         </button>
-        {/* <button
+        <button
           onClick={() => changeProject('곁에')}
           className={`text-2xl font-semibold hover:text-point-blue transition-colors ${currentView === '곁에' ? 'text-white underline underline-offset-4' : 'text-gray'}`}
         >
           곁에
-        </button> */}
+        </button>
+        <button
+          onClick={() => changeProject('.etc')}
+          className={`text-2xl font-semibold hover:text-point-blue transition-colors ${currentView === '.etc' ? 'text-white underline underline-offset-4' : 'text-gray'}`}
+        >
+          MEFI
+        </button>
       </nav>
 
       {/* 프로젝트 상세 렌더링 */}

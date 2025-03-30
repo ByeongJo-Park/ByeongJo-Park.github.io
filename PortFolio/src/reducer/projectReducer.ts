@@ -6,7 +6,7 @@ type ProjectStateType = {
 };
 
 const initialState = {
-    project: "MEFI",
+    project: "UKKIKKI",
 };
 
 type ProjectActionType = | ReturnType<typeof setProject>;
