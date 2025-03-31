@@ -2,10 +2,10 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setProject } from '../../action/projectAction';
 import { RootState } from '../../reducer';
-import Project1 from '../projects/Project1';
-import Project2 from '../projects/Project2';
-import Project3 from '../projects/Project3';
-import Project4 from '../projects/Project4';
+import EtcPage from '../projects/EtcPage';
+import GrabPic from '../projects/GrabPic';
+import Ukkikki from '../projects/Ukkikki';
+import GyeoTae from '../projects/GyeoTae';
 
 const Project: React.FC = () => {
   const dispatch = useDispatch();
@@ -18,13 +18,13 @@ const Project: React.FC = () => {
   const renderContent = () => {
     switch (currentView) {
       case 'GRABPIC':
-        return <Project2 />;
+        return <GrabPic />;
       case 'UKKIKKI':
-        return <Project3 />;
+        return <Ukkikki />;
       case '곁에':
-        return <Project4 />;
+        return <GyeoTae />;
       case '.etc':
-        return <Project1 />;
+        return <EtcPage />;
       default:
         return <div className="text-center text-gray-400 text-lg py-12">404: Page Not Found</div>;
     }
@@ -57,7 +57,7 @@ const Project: React.FC = () => {
           onClick={() => changeProject('.etc')}
           className={`text-2xl font-semibold hover:text-point-blue transition-colors ${currentView === '.etc' ? 'text-white underline underline-offset-4' : 'text-gray'}`}
         >
-          MEFI
+          .etc
         </button>
       </nav>
 
