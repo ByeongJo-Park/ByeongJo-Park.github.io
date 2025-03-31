@@ -2,15 +2,12 @@ import React from 'react';
 import Divider from '../commons/Divider';
 import loginMain from '../../assets/Ukkikki/로그인및메인화면진입.gif';
 import groupCreate from '../../assets/Ukkikki/그룹생성.gif';
-import groupEdit from '../../assets/Ukkikki/그룹정보수정.gif';
 import profileEdit from '../../assets/Ukkikki/개인프로필변경.gif';
 import authorityEdit from '../../assets/Ukkikki/유저권한변경에디터.gif';
 import loginType from '../../assets/Ukkikki/loginType.png';
-import groupAlbum from '../../assets/Ukkikki/그룹앨범.gif';
 import inviteLink from '../../assets/Ukkikki/초대링크생성.gif';
 import uploadGroupSelect from '../../assets/Ukkikki/업로딩그룹변경.gif';
 import postWrite from '../../assets/Ukkikki/게시글작성.gif';
-import photoAlbum from '../../assets/Ukkikki/앨범사진보기.gif';
 import blockMember from '../../assets/Ukkikki/멤버차단.gif';
 import banMember from '../../assets/Ukkikki/멤버추방.gif';
 import homeSetting from '../../assets/Ukkikki/홈화면설정.gif';
@@ -23,19 +20,21 @@ const Project3: React.FC = () => {
       {/* ✅ 소개 + 주요 기능 섹션 */}
       <section className="h-[calc(100svh-180px)] flex flex-col px-4 py-6">
         <div>
-          <h1 className='text-5xl font-bold tracking-wide mb-6 font-frs-bl text-transparent'>Ukkikki</h1>
+          <h1 className='text-5xl tracking-wide mb-6 font-frs-bl text-transparent'>Ukkikki</h1>
           <p className="text-gray mb-8">
             일상 속 추억을 안전하게 기록하고, 실시간으로 공유하는 보안형 앨범 플랫폼
           </p>
-          <p className='font-pre-B text-lg text-point-blue mb-4'>역할 : 팀장 / Front-End Developer (6인프로젝트)</p>
-          <div className='space-y-1 text-gray-300 text-sm leading-relaxed'>
+          <p className='font-frs-bl text-lg text-point-blue mb-4'>역할 : 팀장 / Front-End Developer</p>
+          <p className='font-frs-b text-lg text-point-blue'> 6인 프로젝트 ( Front : 2 / Back : 4 )</p>
+          <p className='font-frs-b text-gray mb-1'> 개발 기간 : 7주</p>
+          <div className='space-y-1 text-gray text-sm leading-relaxed'>
             <p>AWS S3 암호화 기반 보안 앨범 서비스</p>
             <p>사진 촬영부터 업로드, 공유까지 지원하는 실시간 앨범 기능 구현</p>
           </div>
         </div>
 
         {/* 기술 태그 */}
-        <div className="mt-6 flex flex-wrap gap-2 text-sm text-gray-300">
+        <div className="mt-4 flex flex-wrap gap-2 text-sm">
           <span className="bg-point-gray px-2 py-1 rounded-md">React</span>
           <span className="bg-point-gray px-2 py-1 rounded-md">TypeScript</span>
           <span className="bg-point-gray px-2 py-1 rounded-md">TailwindCSS</span>
@@ -61,7 +60,7 @@ const Project3: React.FC = () => {
       <Divider />
 
       {/* ✅ 프론트엔드 구현 섹션 */}
-      <section className="h-svh flex flex-col px-4 py-4">
+      <section className="h-svh flex flex-col px-4 py-8">
         <h2 className='text-xl font-semibold mb-6'>💻 프론트엔드 주요 구현 내용</h2>
         <ul className='list-disc list-inside text-sm space-y-1 text-gray-300'>
           <li>소셜 로그인(Google, Kakao) OAuth 연동 및 사용자 인증 흐름 구현</li>
@@ -73,50 +72,40 @@ const Project3: React.FC = () => {
           <li>게시판(피드) 페이지 구조화 및 게시글 CRUD 기능 컴포넌트화</li>
           <li>반응형 UI 구현 및 사용자 접근성을 고려한 인터랙션 디자인</li>
         </ul>
-        <h2 className="text-xl font-semibold my-6">📸 주요 업무별 결과 이미지</h2>
+        <h2 className="text-xl font-semibold mt-12 my-6">📸 주요 업무별 이미지</h2>
         {/* 로그인 및 사용자 정보 관련 */}
         <div className="mb-12">
           <h3 className="text-md font-semibold mb-2 text-white">✔ 로그인 / 사용자 정보 관리</h3>
           <p className="text-sm text-gray mb-3">소셜 로그인, 프로필 변경, 로그인 흐름 UI 구성</p>
-          <div className="flex flex-wrap gap-4 justify-start">
-            <img src={loginMain} alt="메인 로그인" className="rounded-xl shadow max-h-[360px]" />
-            <img src={loginType} alt="로그인 방식" className="rounded-xl shadow max-h-[360px]" />
-            <img src={profileEdit} alt="프로필 변경" className="rounded-xl shadow max-h-[360px]" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img src={loginMain} alt="메인 로그인" className="rounded-xl shadow h-[360px] w-auto object-contain" />
+            <img src={loginType} alt="로그인 방식" className="rounded-xl shadow h-[360px] w-auto object-contain" />
+            <img src={profileEdit} alt="프로필 변경" className="rounded-xl shadow h-[360px] w-auto object-contain" />
           </div>
         </div>
       </section>
 
       <Divider />
 
-      <section className="h-svh flex flex-col px-4 py-12">
+      <section className="h-svh flex flex-col px-4 py-8">
         {/* 파티 관련 UI */}
         <div className="mb-10">
           <p className="text-md font-semibold mb-2 text-white">✔ 파티(그룹) 관련 UI/UX</p>
           <p className="text-sm text-gray mb-2">파티 생성, 초대, 자동 업로드 지정, 권한 설정 등 모든 흐름 UI 구현</p>
-          <div className="flex gap-4">
-            <img src={groupCreate} alt="그룹 생성" className="rounded-xl shadow max-h-[360px]" />
-            <img src={groupEdit} alt="그룹 정보 수정" className="rounded-xl shadow max-h-[360px]" />
-            <img src={groupAlbum} alt="그룹 앨범" className="rounded-xl shadow max-h-[360px]" />
-            <img src={inviteLink} alt="초대 링크" className="rounded-xl shadow max-h-[360px]" />
-            <img src={uploadGroupSelect} alt="업로드 그룹 변경" className="rounded-xl shadow max-h-[360px]" />
-            <img src={authorityEdit} alt="유저 권한 변경" className="rounded-xl shadow max-h-[360px]" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img src={groupCreate} alt="그룹 생성" className="rounded-xl shadow h-[360px] w-auto object-contain" />
+            <img src={inviteLink} alt="초대 링크" className="rounded-xl shadow h-[360px] w-auto object-contain" />
+            <img src={uploadGroupSelect} alt="업로드 그룹 변경" className="rounded-xl shadow h-[360px] w-auto object-contain" />
+            <img src={authorityEdit} alt="유저 권한 변경" className="rounded-xl shadow h-[360px] w-auto object-contain" />
           </div>
         </div>
-        <div className='grid grid-cols-2'>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div>
             {/* 게시판 */}
-            <h3 className="text-md font-semibold mb-2 text-white">✔ 게시판 및 피드 기능</h3>
+            <p className="text-md font-semibold mb-2 text-white">✔ 게시판 및 피드 기능</p>
             <p className="text-sm text-gray mb-3">게시글 작성 및 댓글 기반 피드 구현</p>
-            <div className="grid grid-cols-2 gap-4 mb-6">
-              <img src={postWrite} alt="게시글 작성" className="rounded-xl shadow max-h-[360px]" />
-            </div>
-          </div>
-          <div>
-            {/* 앨범 */}
-            <h3 className="text-md font-semibold mb-2 text-white">✔ 이미지 그룹 앨범 기능</h3>
-            <p className="text-sm text-gray mb-3">사진 이동, 삭제, 복구, 복사 등 폴더형 앨범 기능 구현</p>
-            <div className="flex flex-wrap gap-4 justify-start">
-              <img src={photoAlbum} alt="앨범 사진 보기" className="rounded-xl shadow max-h-[360px]" />
+            <div className="mb-6">
+              <img src={postWrite} alt="게시글 작성" className="rounded-xl shadow h-[360px] w-auto object-contain" />
             </div>
           </div>
         </div>
@@ -128,15 +117,12 @@ const Project3: React.FC = () => {
       <section className="h-svh flex flex-col px-4 py-12">
         <h3 className="text-md font-semibold mb-2 text-white">✔ 그 외 사용자 인터랙션</h3>
         <p className="text-sm text-gray mb-3">카메라 기능, 홈 설정, 파티원 관리 등</p>
-        <div className="flex flex-wrap gap-4 justify-start">
-          <img src={cameraShot} alt="카메라 촬영" className="rounded-xl shadow max-h-[360px]"/>
-          <img src={blockMember} alt="멤버 차단" className="rounded-xl shadow max-h-[360px]"/>
-          <img src={banMember} alt="멤버 추방" className="rounded-xl shadow max-h-[360px]"/>
-          <img src={homeSetting} alt="홈 화면 설정" className="rounded-xl shadow max-h-[360px]"/>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <img src={cameraShot} alt="카메라 촬영" className="rounded-xl shadow h-[360px] w-auto object-contain"/>
+          <img src={blockMember} alt="멤버 차단" className="rounded-xl shadow h-[360px] w-auto object-contain"/>
+          <img src={banMember} alt="멤버 추방" className="rounded-xl shadow h-[360px] w-auto object-contain"/>
+          <img src={homeSetting} alt="홈 화면 설정" className="rounded-xl shadow h-[360px] w-auto object-contain"/>
         </div>
-        <h2>회고</h2>
-        <h2>성장</h2>
-
       </section>
 
     </div>

@@ -13,7 +13,9 @@ const Project2: React.FC = () => {
           <p className="text-gray mb-8">
             AI와 지도를 활용해, 일상을 수집하는 생태 도감 플랫폼
           </p>
-          <p className='font-pre-B text-lg text-point-blue mb-4'>역할 : 팀장 / Front-End Developer</p>
+          <p className='font-frs-bl text-lg text-point-blue mb-4'>역할 : 팀장 / Front-End Developer</p>
+          <p className='font-frs-b text-lg text-point-blue'> 6인 프로젝트 ( Front : 3 / Back : 3 )</p>
+          <p className='font-frs-b text-gray mb-1'> 개발 기간 : 7주</p>
           <div className='space-y-1 text-gray-300 text-sm leading-relaxed'>
             <p>Image Captioning 기반 개체 판별 + 위치 기반 지도 연동 서비스</p>
             <p>실시간 수집 정보 시각화 및 도감화 기능을 제공</p>
