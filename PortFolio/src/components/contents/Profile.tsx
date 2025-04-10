@@ -11,13 +11,33 @@ const Profile: React.FC = () => {
       {/* ✅ 1. 기본 정보 + 스킬 + 학력 + 자격증 */}
       <section className="h-svh flex flex-col px-8 py-12 space-y-12">
         {/* 프로필 */}
-        <article className='flex items-center gap-4'>
-          <img src={profilePhoto} alt='Profile' className='w-32 h-32 rounded-full object-cover object-top'/>
+        <article className="flex items-center gap-6">
+          <img 
+            src={profilePhoto} 
+            alt="Profile" 
+            className="w-32 h-32 rounded-full object-cover object-top" 
+          />
           <div>
-            <h1 className='text-2xl font-bold mb-2'>박 병 조</h1>
-            <p className='text-xl text-gray'>1995.11.10</p>
+            <h1 className="text-2xl font-bold mb-2">박 병 조</h1>
+
+            <ul className="space-y-1">
+              <li>
+                <a 
+                  href="https://github.com/ByeongJo-Park" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-xl text-gray hover:text-point-gray transition"
+                >
+                  👉 GitHub: ByeongJo-Park
+                </a>
+              </li>
+              <li className="text-xl text-gray">
+                🎂 생년월일: 1995.11.10
+              </li>
+            </ul>
           </div>
         </article>
+
 
         {/* 자기 소개*/}
         <article >
