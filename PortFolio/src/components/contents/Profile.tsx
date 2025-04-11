@@ -32,7 +32,13 @@ const Profile: React.FC = () => {
                 </a>
               </li>
               <li className="text-xl text-gray">
-                🎂 생년월일: 1995.11.10
+                📧 k97115284@gmail.com
+              </li>
+              <li className="text-xl text-gray">
+                📞 010-9711-5284
+              </li>
+              <li className="text-xl text-gray">
+                🎂 <span>1995.11.10</span>
               </li>
             </ul>
           </div>

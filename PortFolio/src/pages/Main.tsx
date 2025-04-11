@@ -1,7 +1,6 @@
 import React from "react";
 import Profile from "../components/contents/Profile";
 import Project from "../components/contents/Project";
-import Contact from "../components/contents/Contact";
 import Navi from "../components/commons/Navi";
 import { useSelector } from "react-redux";
 import { RootState } from "../reducer";
@@ -16,8 +15,6 @@ const Main: React.FC = () => {
 				return <Profile/>
 			case "Project":
 				return <Project/>
-			case "Contact":
-				return <Contact/>
 			default:
 				return <div className="text-center">404: Page Not Found</div>;
 		}
