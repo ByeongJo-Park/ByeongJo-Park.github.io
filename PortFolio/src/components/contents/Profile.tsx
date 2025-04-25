@@ -48,13 +48,16 @@ const Profile: React.FC = () => {
         {/* 자기 소개*/}
         <article >
           <h2 className="text-xl font-semibold mb-1">👋 About Me</h2>
-          <p className="leading-relaxed text-base text-gray">
-            기획부터 백엔드, 프론트엔드까지의 흐름을 이해하고,  
-            각 파트가 유기적으로 연결될 수 있도록 소통과 구조 설계를 중요하게 생각하는 프론트엔드 개발자입니다.  
-            <br />
-            사용자 경험(UX)을 고려한 화면 구성과 일관된 인터페이스 구현을 지향하며,
-            <br />
-            명확한 API 설계와 커뮤니케이션을 통해 협업 과정에서도 완성도 높은 결과물을 만들어가고자 노력합니다.
+          <p className="leading-relaxed text-sm text-gray">
+            - 개발 역량과 협업 능력을 겸비하기 위해 노력하는 프론트엔드 개발자입니다.
+            <br/>
+            - 총 4개의 팀 프로젝트에 참여하였고, 그 중 3개의 7주간 장기 프로젝트에서는 2회 팀장으로 활동하며 원활한 소통과 목표 달성을 이끌었습니다.
+            <br/>
+            - 나머지 프로젝트에서도 팀원으로 적극 협업하며, 다양한 의견을 조율하고 문제를 함께 해결하는 경험을 쌓았습니다.
+            <br/>
+            - 모든 프로젝트에서 프론트엔드 개발을 전담하였으며, 특히 React를 중심으로 실무에 가까운 웹 서비스 구현 경험을 쌓았습니다.
+            <br/>
+            - 사용자 중심의 UI/UX 설계, 성능 최적화, 컴포넌트 구조화 등 깊이 있는 기술 역량을 키워가며 꾸준한 성장을 추구하고 있습니다.
           </p>
         </article>
 
@@ -66,12 +69,12 @@ const Profile: React.FC = () => {
               <h3 className='text-xl font-semibold mb-2 text-teal-400'>🧠 Language & Framework</h3>
               <div className='flex flex-wrap gap-2'>
                 <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white" alt="React" />
-                <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+                <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />``
                 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
                 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white" alt="Python" />
               </div>
             </div>
-            {/* 스타일링 */}
+            {/* 스타일링 */}``
             <div className=' bg-point-gray p-3 rounded-xl shadow-sm px-4'>
               <h3 className='text-xl font-semibold mb-2 text-blue-400'>🎨 Style / UI</h3>
               <div className='flex flex-wrap gap-2'>
