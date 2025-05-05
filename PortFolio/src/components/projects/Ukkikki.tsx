@@ -42,17 +42,16 @@ const Project3: React.FC = () => {
 
         {/* 주요 기능 */}
         <div>
-          <h2 className="text-xl font-semibold my-6">💎 주요 기능</h2>
-          <ul className="list-disc list-inside text-gray text-md space-y-2">
-            <li><b>📸 사진 업로드 및 AI 분류</b>: S3 SSE-C 객체 암호화, GPT 기반 사물 분류, Flask 기반 인물 인식</li>
-            <li><b>📂 디렉토리 관리</b>: 폴더 생성/이동, 사진 복사/삭제/복구 (BFS 기반 경로 복원 포함)</li>
-            <li><b>📥 자동 업로드</b>: 카메라 UX + 지정 파티에 자동 업로드 기능</li>
-            <li><b>📝 메모 및 좋아요</b>: 사진에 메모 추가/수정/삭제 및 좋아요 기능</li>
-            <li><b>👥 그룹/파티 기능</b>: 링크 가입, 자동 업로드 그룹 지정, 호스트 권한 설정, 암호/추방 기능</li>
-            <li><b>👤 소셜 로그인 및 게스트 모드</b>: 카카오 로그인, 게스트 다운로드, 간편 비밀번호로 그룹 키 관리</li>
-            <li><b>💬 실시간 채팅 및 알림</b>: WebSocket 기반 채팅, 클릭 시 콘텐츠 이동</li>
-            <li><b>🗨️ 게시판 기능</b>: 댓글/대댓글 및 태그 호출 기능</li>
-            <li><b>🔐 보안 구조</b>: JWT 인증, 그룹 키 기반 암호화된 이미지 접근 제어</li>
+          <h2 className='text-xl font-semibold mb-6'>💻 프론트엔드 주요 구현 내용</h2>
+          <ul className='list-disc list-inside text-sm space-y-1 text-gray-300'>
+            <li>소셜 로그인(Google, Kakao) OAuth 연동 및 사용자 인증 흐름 구현</li>
+            <li>2차 비밀번호 입력 UI/UX 설계 및 사용자 보안 로직 처리</li>
+            <li>파티(앨범 그룹) 생성/관리 컴포넌트 분리 및 상태 동기화 로직 설계</li>
+            <li>사진 업로드용 카메라 컴포넌트 구현 (MediaDevices API 활용)</li>
+            <li>실시간 이미지 미리보기 및 업로드 후 리스트 반영 구조 설계</li>
+            <li>이미지 그룹화 UI 및 Lazy Loading 적용을 통한 성능 최적화</li>
+            <li>게시판(피드) 페이지 구조화 및 게시글 CRUD 기능 컴포넌트화</li>
+            <li>반응형 UI 구현 및 사용자 접근성을 고려한 인터랙션 디자인</li>
           </ul>
         </div>
       </section>
@@ -61,17 +60,6 @@ const Project3: React.FC = () => {
 
       {/* ✅ 프론트엔드 구현 섹션 */}
       <section className="h-svh flex flex-col px-4 py-8">
-        <h2 className='text-xl font-semibold mb-6'>💻 프론트엔드 주요 구현 내용</h2>
-        <ul className='list-disc list-inside text-sm space-y-1 text-gray-300'>
-          <li>소셜 로그인(Google, Kakao) OAuth 연동 및 사용자 인증 흐름 구현</li>
-          <li>2차 비밀번호 입력 UI/UX 설계 및 사용자 보안 로직 처리</li>
-          <li>파티(앨범 그룹) 생성/관리 컴포넌트 분리 및 상태 동기화 로직 설계</li>
-          <li>사진 업로드용 카메라 컴포넌트 구현 (MediaDevices API 활용)</li>
-          <li>실시간 이미지 미리보기 및 업로드 후 리스트 반영 구조 설계</li>
-          <li>이미지 그룹화 UI 및 Lazy Loading 적용을 통한 성능 최적화</li>
-          <li>게시판(피드) 페이지 구조화 및 게시글 CRUD 기능 컴포넌트화</li>
-          <li>반응형 UI 구현 및 사용자 접근성을 고려한 인터랙션 디자인</li>
-        </ul>
         <h2 className="text-xl font-semibold mt-12 my-6">📸 주요 업무별 이미지</h2>
         {/* 로그인 및 사용자 정보 관련 */}
         <div className="mb-12">
